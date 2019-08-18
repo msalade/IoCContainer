@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCContainer.BusinessLayer", "IoCContainer.BusinessLayer\IoCContainer.BusinessLayer.csproj", "{EB85B39A-3663-413E-AE63-222DE71BDB2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCContainer.BusinessLayer.Test", "IoCContainer.BusinessLayer.Test\IoCContainer.BusinessLayer.Test.csproj", "{89DAA159-777B-478B-84FC-CD309B603E89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB85B39A-3663-413E-AE63-222DE71BDB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB85B39A-3663-413E-AE63-222DE71BDB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB85B39A-3663-413E-AE63-222DE71BDB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB85B39A-3663-413E-AE63-222DE71BDB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DAA159-777B-478B-84FC-CD309B603E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DAA159-777B-478B-84FC-CD309B603E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DAA159-777B-478B-84FC-CD309B603E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DAA159-777B-478B-84FC-CD309B603E89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {237143E9-5B75-4CC2-8B67-6404D6CF9A66}
+	EndGlobalSection
+EndGlobal
