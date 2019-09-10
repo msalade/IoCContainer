@@ -17,12 +17,18 @@ namespace IoCContainer.BusinessLayer
         /// <inheritdoc />
         public void Register<TContract, TClass>()
         {
+            if (IsRegistered(typeof(TContract)))
+                throw new InvalidOperationException($"Class: {typeof(TClass)} already registered");
+
             _registeredTypes.Add(typeof(TContract), () => GetInstance(typeof(TClass)));
         }
 
         /// <inheritdoc />
         public void RegisterSingleton<T>(T obj)
-        {
+        { 
+            if (IsRegistered(typeof(T)))
+                throw new InvalidOperationException($"Class: {obj.GetType()} already registered");
+
             _registeredTypes.Add(typeof(T), () => obj);
         }
 
@@ -48,5 +54,7 @@ namespace IoCContainer.BusinessLayer
 
             return Activator.CreateInstance(type, args);
         }
+
+        private bool IsRegistered(Type type) => _registeredTypes == null || _registeredTypes.ContainsKey(type);        
     }
 }
